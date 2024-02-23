@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combining selectors</title>
+    <style>
+        .highlight{
+            background-color: aqua;
+        }
+        p.highlight{
+            font-weight: bold;
+            font-style: italic;
+        }
+
+        .highlight.mainpoint{
+            color: red;
+            background-color: aquamarine;
+        }
+        section>article{
+            color: green;
+            font-size: 24px;
+        }
+        section>div{
+            color: pink;
+        }
+    </style>
+</head>
+<body>
+    <h1>combining css selectors</h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. At nobis eum qui nostrum eveniet alias fugiat molestiae inventore nisi!</p>
+    <p class="highlight">this is a paragraph with class highlight</p>
+    <div class="mainpoint highlight">this is a main point of article</div>
+    <h1>Child Selector</h1>
+<section>
+  <h2>Subheading 1</h2>
+  <div>
+    <article>ARTICLE which inside DIV, which is inside SECTION</article>
+  </div>
+</section>
+<section>
+  <article>ARTICLE as a direct child of the SECTION element.</article>
+</section>
+<h2>Subheading 2</h2>
+
+</body>
+</html>
